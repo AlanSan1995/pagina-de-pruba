@@ -284,3 +284,30 @@ header > img {
     transform: rotate(180deg);
     transition: 0.3s;
 }
+.contact{
+    width: calc(100% - 200px);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 100px;
+    background: linear-gradient(to right , var(--tertiary-background) 70% ,var(--secondary-background) 0% ) left , linear-gradient(to left , var(--tertiary-background) 0% ,var(--secondary-background) 30% ) right;
+}
+.contact > img {
+    width: 40%;
+}
+.contactform {
+    width: 40%;
+}
+.contactform > h4 {
+    color: var(--primary-text-dark);
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    line-height: 40px;
+}
+.contactform > h4 > b{
+    color: var(--primary-color);
+    font-family: var(--secondary-font);
+    font-size: 40px;
+    line-height: 40px;
+}
