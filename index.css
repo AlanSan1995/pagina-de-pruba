@@ -13,6 +13,7 @@
     --primary-background:#FFFFFF;
     --secondary-background:#DCE1DA;
     --tertiary-background:#eaece8;
+    --quarterly-backgound:#e3e3e3;
 
 
     --background-primary-ligth:#F8F8F8;
@@ -227,4 +228,59 @@ header > img {
     border: 0;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.service {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+.service > img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    width: 50%;
+}
+.dropdown_list {
+    width: 50%;
+    margin-left: 120px;
+    border: 1px solid var(--quarterly-backgound);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.dropdown_container > button {
+    background-color: var(--background-primary-ligth);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border: 0;
+    padding: 20px 30px;
+    font-size: 16px;
+    color: var(--secondary-text-dark);
+    cursor: pointer;
+    align-items: center;
+}
+.dropdown{
+    background-color: var(--background-primary-ligth);
+    color: var(--secondary-text-dark);
+    padding: 0px 37px;
+    border-top: 1px solid var(--quarterly-backgound);
+    border-bottom: 1px solid var(--quarterly-backgound);
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.dropdown p {
+    margin: 40px;
+}
+.dropdown_show{
+    max-height: 500px;
+}
+.arrow_rotate {
+    transform: rotate(180deg);
+    transition: 0.3s;
 }

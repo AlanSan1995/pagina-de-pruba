@@ -75,7 +75,7 @@ const updateProductCarrucel = ()=>{
 setInterval(() => {
     productCardIndex = (productCardIndex + 1) % 3
     updateProductCarrucel()
-}, 5000);
+}, 3000);
 
 controlProductCarrucelRight.onclick = ()=>{
     productCardIndex = (productCardIndex + 1) % 3
@@ -85,4 +85,72 @@ controlProductCarrucelLeft.onclick = ()=>{
     productCardIndex = ( productCardIndex == 0 ? 2 : productCardIndex - 1) % 3
     updateProductCarrucel()
 }
+
+
+
+const dropdown1 = document.getElementById('dropdown1')
+
+const dropdown2 = document.getElementById('dropdown2')
+
+const dropdown3 = document.getElementById('dropdown3')
+
+const dropdownButton1 = document.getElementById('dropdownButton1')
+
+const dropdownButton2 = document.getElementById('dropdownButton2')
+
+const dropdownButton3 = document.getElementById('dropdownButton3')
+
+const dropdownArrow1 = document.getElementById('dropdownArrow1')
+
+const dropdownArrow2 = document.getElementById('dropdownArrow2')
+
+const dropdownArrow3 = document.getElementById('dropdownArrow3')
+
+dropdownButton1.onclick = ()=>{
+    if (dropdown2.classList[1]) {
+        dropdown2.classList.toggle('dropdown_show')
+        dropdownArrow2.classList.toggle('arrow_rotate')
+    }
+    if (dropdown3.classList[1]) {
+        dropdown3.classList.toggle('dropdown_show')
+        dropdownArrow3.classList.toggle('arrow_rotate')
+    }
+    dropdown1.classList.toggle('dropdown_show')
+    dropdownArrow1.classList.toggle('arrow_rotate')
+}
+
+dropdownButton2.onclick = ()=>{
+    if (dropdown1.classList[1]) {
+        dropdown1.classList.toggle('dropdown_show')
+        dropdownArrow1.classList.toggle('arrow_rotate')
+    }
+    if (dropdown3.classList[1]) {
+        dropdown3.classList.toggle('dropdown_show')
+        dropdownArrow3.classList.toggle('arrow_rotate')
+    }
+    dropdown2.classList.toggle('dropdown_show')
+    dropdownArrow2.classList.toggle('arrow_rotate')
+}
+
+dropdownButton3.onclick = ()=>{
+    if (dropdown2.classList[1]) {
+        dropdown2.classList.toggle('dropdown_show')
+        dropdownArrow2.classList.toggle('arrow_rotate')
+    }
+    if (dropdown1.classList[1]) {
+        dropdown1.classList.toggle('dropdown_show')
+        dropdownArrow1.classList.toggle('arrow_rotate')
+    }
+    dropdown3.classList.toggle('dropdown_show')
+    dropdownArrow3.classList.toggle('arrow_rotate')
+}
+
+
+
+
+
+
+
+
+
 
