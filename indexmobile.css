@@ -1,0 +1,152 @@
+:root{
+    --primary-color:#E0752F;
+
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+
+    --primary-text-white:#FFFFFF;
+    --primary-text-dark:#343434;
+    --secondary-text-dark:#5F6368;
+
+    --primary-background:#FFFFFF;
+    --secondary-background:#DCE1DA;
+    --tertiary-background:#eaece8;
+    --quarterly-backgound:#e3e3e3;
+
+    --border-color:#bebebe;
+
+    --background-primary-ligth:#F8F8F8;
+    --background-primary-dark:#343434;
+}
+@media (max-width:480px) {
+    .header_menu{
+        display: block;
+    }
+    header{
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+        position: absolute;
+        top: 0;
+        width: calc(100% -  30px);
+        transition: 0.3s;
+    }
+    .header_dropdown {
+        border: 0;
+    }
+    header > img {
+        height: 25px;
+    }
+    .navigation{
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-end;
+        height: 200px;
+        animation: menudropdown 0.7s;
+        justify-content: space-around;
+        font-weight: 700;
+        gap: 0px;
+        overflow: hidden;
+        display: none;
+    }
+    @keyframes menudropdown {
+        from{
+            height: 0px;
+            opacity: 0;
+        }
+        to{
+            height: 200px;
+            opacity: 1;
+        }
+    }
+    .home_carucel_desktop{
+        display: none;
+    }
+    .home_carrucel_mobile{
+        display: block;
+    }
+    #checkbox {
+        display: none;
+      }
+      
+      .toggle {
+        position: relative;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 10px;
+        transition-duration: .5s;
+      }
+      
+      .bars {
+        width: 100%;
+        height: 4px;
+        background-color: var(--primary-color);
+        border-radius: 4px;
+      }
+      
+      #bar2 {
+        transition-duration: .8s;
+      }
+      
+      #bar1 {
+        width: 50%;
+      }
+      
+      #bar2 {
+        width: 75%;
+      }
+      
+      #checkbox:checked + .toggle .bars {
+        position: absolute;
+        transition-duration: .5s;
+      }
+      
+      #checkbox:checked + .toggle #bar2 {
+        transform: scaleX(0);
+        transition-duration: .1s;
+      }
+      
+      #checkbox:checked + .toggle #bar1 {
+        width: 100%;
+        transform: rotate(45deg);
+        transition-duration: .5s;
+      }
+      
+      #checkbox:checked + .toggle #bar3 {
+        width: 100%;
+        transform: rotate(-45deg);
+        transition-duration: .5s;
+      }
+      
+      #checkbox:checked + .toggle {
+        transition-duration: .5s;
+        transform: rotate(180deg);
+      }
+      .home{
+        padding: 0 15px;
+        padding-top: 120px;
+        height: auto;
+      }
+      .home_carrucel_control{
+        bottom: 30px;
+        left: 55px;
+      }
+      .about{
+        display: none;
+      }
+      .products{
+        display: none;
+      }
+      .service{
+        display: none;
+      }
+      .contact{
+        display: none;
+      }
+    
+}

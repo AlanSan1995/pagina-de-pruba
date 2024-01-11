@@ -52,6 +52,9 @@ header > img {
     text-decoration: none;
     color: var(--primary-text-white);
 }
+.header_menu{
+    display: none;
+}
 
 .home{
     height: calc(100vh - 80px);
@@ -61,7 +64,6 @@ header > img {
     justify-content: center;
     padding-left: 100px;
     position: relative;
-
 }
 .home_carrucel{
     width: 100%;
@@ -77,6 +79,9 @@ header > img {
 }
 .home_carrucel_container > img{
     width: calc(100% / 3);
+}
+.home_carrucel_mobile{
+    display: none;
 }
 .home_carrucel_control{
     position: absolute;
@@ -313,6 +318,7 @@ header > img {
 .contactform {
     width: 40%;
 }
+
 .contactform > h4 {
     color: var(--primary-text-dark);
     font-family: var(--secondary-font);

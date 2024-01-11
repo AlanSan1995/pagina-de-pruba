@@ -48,7 +48,21 @@ const upButton = ()=>{
 }
 upButton()
 
+const checkbox = document.getElementById('checkbox')
 
+const navigation = document.getElementById('navigation')
+
+const header = document.getElementById('header')
+
+checkbox.onclick = ()=>{
+    if (checkbox.checked == true) {
+        navigation.style.display = 'flex' 
+        header.classList.toggle('header_dropdown')
+        return
+    } 
+    navigation.style.display = 'none'
+    header.classList.toggle('header_dropdown')
+}
 
 setInterval(() => {
     updateStyles()
