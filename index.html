@@ -10,15 +10,15 @@
     <header>
       <img src="./assets/logo.svg" alt="Logo de pagina" />
       <nav class="navigation">
-        <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Products</a>
-        <a href="">Services</a>
-        <a href="">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#service">Services</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
     <main>
-      <div class="home_carrucel">
+      <div  class="home_carrucel">
         <div class="home_carrucel_container" id="homeCarrucelContainer">
           <img src="./assets/slider-1.png" alt="" />
           <img src="./assets/slider-2.jpg" alt="" />
@@ -30,7 +30,7 @@
           <button id="carrucelControl3"></button>
         </div>
       </div>
-      <section class="home">
+      <section id="home" class="home">
         <h1>
           Sed ut perspiciatis <br />
           unde omnis iste natus
@@ -41,7 +41,7 @@
         </p>
         <button>Read more</button>
       </section>
-      <section class="about">
+      <section id="about" class="about">
         <div class="about_info">
           <h2>We Help Businesses <br /><b>Grow and Innovate</b></h2>
           <p>
@@ -59,7 +59,7 @@
           </p>
         </div>
       </section>
-      <section class="products">
+      <section id="products" class="products">
         <div class="product_carrucel">
           <div class="product_carrucel_container" id="productCarrucelContainer">
             <div>
@@ -103,7 +103,7 @@
           </div>
         </div>
       </section>
-      <section class="service">
+      <section id="service" class="service">
         <img src="./assets/section4-image.png" alt="fondo seccion 4" />
         <div class="dropdown_list">
           <div class="dropdown_container">
@@ -153,10 +153,10 @@
           </div>
         </div>
       </section>
-      <section class="contact">
+      <section id="contact" class="contact">
         <div class="contactform">
           <h4>Get in touch <br /><b>We are hiring!</b></h4>
-          <form >
+          <form>
             <div class="contact_input_group"><label>Name</label><input type="text" /></div>
             <div class="contact_input_group"><label>Email</label><input type="text" /></div>
             <div class="contact_input_group"><label>Phone</label><input type="text" /></div>
@@ -171,7 +171,10 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer class="footer_section">
+      <p>2020 © All rights reserved.</p>
+      <img class="footer_logo" src="./assets/footer-logo.svg" alt="">
+    </footer>
 
     <script src="./index.js"></script>
   </body>
