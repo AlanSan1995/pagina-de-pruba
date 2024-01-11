@@ -31,6 +31,25 @@ function updateStyles() {
     }
 }
 updateStyles()
+
+const upButton = ()=>{
+    window.addEventListener('scroll', ()=>{
+        let scroll = document.documentElement.scrollTop;
+        console.log(scroll);
+        let buttonTop = document.getElementById('buttonTop')
+
+        if (scroll > 300) {
+            buttonTop.style.width = 40 + 'px'
+        }else{
+            buttonTop.style.width = 0 + 'px'
+
+        }
+    })
+}
+upButton()
+
+
+
 setInterval(() => {
     updateStyles()
     imgIndex = (imgIndex + 1) % 3
@@ -144,6 +163,7 @@ dropdownButton3.onclick = ()=>{
     dropdown3.classList.toggle('dropdown_show')
     dropdownArrow3.classList.toggle('arrow_rotate')
 }
+
 
 
 
