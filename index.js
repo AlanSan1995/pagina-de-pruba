@@ -35,7 +35,6 @@ updateStyles()
 const upButton = ()=>{
     window.addEventListener('scroll', ()=>{
         let scroll = document.documentElement.scrollTop;
-        console.log(scroll);
         let buttonTop = document.getElementById('buttonTop')
 
         if (scroll > 300) {

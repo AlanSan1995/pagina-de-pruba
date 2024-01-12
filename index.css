@@ -108,7 +108,7 @@ header > img {
 .home_carrucel > a > img{
     position: fixed;
     width: 0px;
-    top: 80%;
+    bottom: 10%;
     right: 90px;
     transition: 0.3s;
     z-index: 10;
@@ -318,7 +318,6 @@ header > img {
 .contactform {
     width: 40%;
 }
-
 .contactform > h4 {
     color: var(--primary-text-dark);
     font-family: var(--secondary-font);
